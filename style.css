@@ -82,7 +82,11 @@ main {
 #searchbar {
     display: block;
     padding: 8px;
-    margin: 15px auto 15px auto;
+    margin: 20px auto 25px auto;
+    border-radius: 50px;
+    border-color: rgba(194, 194, 194, 0.342);
+    border-width: 1px;
+    height: 45px;
 }
 
 #search-buttons {
@@ -92,11 +96,11 @@ main {
 }
 
 .search-button {
-    padding: 8px;
+    padding: 12px;
     margin: 5px;
     background-color: rgb(241, 241, 241);
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
 .search-button:hover {
