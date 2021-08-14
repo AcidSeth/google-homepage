@@ -2,27 +2,31 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css"> <title>Google?</title>
-</head>
+    <link rel="icon" href="images/googlepixelfavico.png" type="icon">
 <body>
-<nav>
+<header>
     <ul>
         <li><a href="" id="gmail">Gmail</a></li>
         <li><a href="" id="images">Images</a></li>
-        <li><a href="" id="apps"></a><img alt="Apps" id="apps-icon" src="images/apps_black_24dp.svg"></li>
-        <li><button id="sign-in">Sign in</button></li>
+        <li><a href="" id="apps"></a><img alt="Apps" id="apps-icon" class="black-icon" src="images/apps_black_24dp.svg"></li>
+        <li><a href="https://github.com/AcidSeth" target=_blank><button id="sign-in">Sign in</button></a></li>
     </ul>
-</nav>
+</header>
 <main>
     <div>
-        <img src="images/googlelogo_color_272x92dp.png" id="google-logo" alt="Google Logo">
-            <form>
-                <input type="search" id="searchbar">
-                     <div id="search-buttons">
-                            <button class="search-button">Google Search</button>
-                            <button class="search-button">I'm Feeling Lucky</button>
-                    </div>
-            </form>
-     </div>
+        <img alt="Google Logo" src="images/googlelogo_color_272x92dp.png" id="google-logo">
+        <form>
+            <input type="search" id="searchbar">
+                     <img alt="Search Lens" src="images/search_black_24dp.svg" id="search-lens" class="search-bar black-icon" height="20px"; width="20px" focusable="false">
+                 <div id="search-mic-div">
+                     <img alt="Microphone"  src="images/Google_mic.svg" id="search-mic" class="search-bar" height="14px"; width="14px" focusable="false">
+                 </div>
+        </form>
+        <div id="search-buttons">
+             <button class="search-button">Google Search</button>
+             <button class="search-button">I'm Feeling Lucky</button>
+        </div>
+    </div>
 </main>
 <footer>
     <div id="footer1">

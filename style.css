@@ -1,7 +1,26 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+}
+
 * {
     font-size: 14px;
     font-family: Arial;
    }
+
+.black-icon {
+    opacity: 50%;
+}
+
+#apps-icon:hover, #sign-in:hover {
+    cursor: pointer;
+}
 
 img {
     max-width: 100%;
@@ -19,7 +38,7 @@ a:hover {
     text-decoration: underline; !important
 }
 
-nav a {
+header a {
     color: rgb(39, 39, 39);
 }
 
@@ -63,67 +82,104 @@ li button:hover {
     filter: brightness(110%)
 }
 
-button:active {
+li button:active {
     filter: brightness(125%)
 }
 
-body {
-    position: relative;
-}
-
 main {
-    position: absolute;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
     top: 50%;
     left: 50%;
-    padding: 20px;
-    margin: 225px 0 0 -150px;
+    padding: 250px 0px 0px 250px;
+}
+
+#google-logo {
+    margin: auto auto 25px 140px;
+}
+
+form {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: ;
 }
 
 #searchbar {
-    display: block;
-    padding: 8px;
-    margin: 20px auto 25px auto;
+    padding-left: 40px;
     border-radius: 50px;
     border-color: rgba(194, 194, 194, 0.342);
     border-width: 1px;
     height: 45px;
+    width: 570px;
+    position: relative;
+    padding-right: -25px;
+}
+
+form > .search-bar {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+}
+
+form > #search-mic-div{
+    display: flex;
+    margin-left: -30px;
+    z-index: 3;
+}
+
+form > #search-lens {
+    top: 13px;
 }
 
 #search-buttons {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin: 25px;
 }
 
 .search-button {
-    padding: 12px;
+    padding: 10px 12px 10px 12px;
     margin: 5px;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(247, 247, 247);
     border: none;
     border-radius: 4px;
 }
 
-.search-button:hover {
-    filter: brightness(95%);
+.search-button:hover  {
+    outline: grey solid 1px;
+    cursor: pointer;
+}
+
+.search-button:active {
+    outline: #0f45da solid 1px;
 }
 
 footer {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   list-style-type: none;
-   position: fixed;
-   bottom: 0px;
-   width: 99%;
-   margin: auto;
-   padding: 3px;
-   background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    bottom: 0;
+    float: inline-end;
+    width: 100%;
+    list-style-type: none;
+    clear: both;
+    background-color: rgb(240, 240, 240);
+    position: absolute;
+}
+
+#footer1, #footer2 {
+    margin: 0px 20px 0 20px;
 }
 
 footer li {
-    padding: 5px;
+    padding: 7px;
 }
 
 footer a {
-    color: grey;
+    color: rgb(100, 100, 100);
 }
