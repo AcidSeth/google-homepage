@@ -119,6 +119,16 @@ form {
     padding-right: -25px;
 }
 
+#searchbar:hover, #searchbar:target #searchbar:focus {
+    outline: rgba(128, 128, 128, 0.534) solid 1px;
+    box-shadow: lightslategrey 1px;
+}
+
+#searchbar:focus-visible {
+    outline: rgba(128, 128, 128, 0.534) solid 1px;
+
+}
+
 form > .search-bar {
     position: absolute;
     top: 12px;
